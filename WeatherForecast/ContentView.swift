@@ -43,9 +43,9 @@ struct DayForecast: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text(day)
-                .font(.headline)
+                .font(.title)
             Image(systemName: iconName)
                 .foregroundStyle(iconColor)
                 .font(.largeTitle)
